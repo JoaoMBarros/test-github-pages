@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Em breve</title>
+    <title>Em breve - Minecraft Style</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+        
         body {
             display: flex;
             flex-direction: column;
@@ -12,27 +14,59 @@
             justify-content: center;
             min-height: 100vh;
             margin: 0;
-            font-family: Arial, sans-serif;
+            font-family: 'VT323', monospace;
             text-align: center;
+            background-color: #2B2B2B;
+            color: #FFFFFF;
+            background-image: 
+                linear-gradient(rgba(0, 0, 0, 0.3) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 0, 0, 0.3) 1px, transparent 1px);
+            background-size: 16px 16px;
         }
+        
+        .container {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 2rem;
+            border: 4px solid #565656;
+            box-shadow: 0 0 0 4px #1A1A1A;
+        }
+        
         h1 {
-            font-size: 2.5rem;
+            font-size: 3.5rem;
             margin-bottom: 2rem;
+            text-shadow: 2px 2px #1A1A1A;
+            color: #55FF55;
         }
+        
         img {
             max-width: 100%;
             height: auto;
             margin: 2rem 0;
+            border: 4px solid #565656;
+            box-shadow: 0 0 0 4px #1A1A1A;
         }
+        
         h2 {
-            font-size: 2rem;
+            font-size: 3rem;
             margin-top: 2rem;
+            text-shadow: 2px 2px #1A1A1A;
+            color: #FFFF55;
+        }
+        
+        .dirt-bg {
+            background-color: #866043;
+            padding: 20px;
+            border: 4px solid #513825;
         }
     </style>
 </head>
 <body>
-    <h1>Em breve</h1>
-    <img src="/api/placeholder/400/300" alt="GIF placeholder">
-    <h2>Caça ao tesouro 2</h2>
+    <div class="container">
+        <h1>Em breve</h1>
+        <div class="dirt-bg">
+            <img src="https://tenor.com/pt-BR/view/crystal-adventure-time-gemstones-runes-treasure-hunt-gif-14075542096183389762" alt="GIF placeholder">
+        </div>
+        <h2>Caça ao tesouro 2</h2>
+    </div>
 </body>
 </html>
